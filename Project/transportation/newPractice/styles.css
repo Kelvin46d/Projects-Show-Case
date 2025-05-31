@@ -1,0 +1,136 @@
+/* Resume Container */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.resume-container {
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header */
+.resume-header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+.resume-header h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #333;
+}
+.resume-header p {
+  font-size: 1.2em;
+  color: #666;
+}
+.contact-info p {
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Section Titles */
+section h2 {
+  color: #333;
+  font-size: 1.4em;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Profile Section */
+.profile p {
+  font-size: 1em;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Experience and Education */
+.experience, .education {
+  margin-top: 10px;
+}
+.job h3, .edu-item h3 {
+  font-size: 1.1em;
+  color: #333;
+  margin: 5px 0;
+}
+.job p, .edu-item p {
+  font-size: 0.9em;
+  color: #666;
+}
+.job ul, .achievements ul {
+  margin: 10px 0 10px 20px;
+  list-style-type: square;
+}
+
+/* Skills */
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.skills ul li {
+  margin: 5px 15px 5px 0;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Achievements */
+.achievements ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Print Styles */
+@media print {
+  /* Hide elements that shouldn't be printed */
+  body, .resume-container {
+    box-shadow: none;  /* Remove shadow around the resume */
+    background: white;  /* Ensure background is white */
+  }
+
+  /* Simplify colors for black-and-white printing */
+  .resume-header, section h2 {
+    color: black; /* Ensure text prints dark */
+    border-color: black; /* Darken borders for clarity */
+  }
+  
+  /* Optimize font sizes for print readability */
+  h1 {
+    font-size: 1.8em;
+  }
+  p, li {
+    font-size: 0.9em;
+  }
+
+  /* Remove unnecessary padding and margins */
+  .resume-container {
+    padding: 0;
+  }
+
+  /* Ensure full width utilization */
+  .resume-container {
+    width: 100%;
+  }
+  
+  /* Hide any color backgrounds and other unnecessary decorative elements */
+  .skills ul li {
+    background: none; /* Remove background color from skills */
+    border: none; /* Remove any borders */
+  }
+
+  /* Page breaks after sections (optional) */
+  section {
+    page-break-after: avoid; /* Allow sections to flow to next page */
+  }
+}

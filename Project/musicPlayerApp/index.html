@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="player-container">
+    <div class="audio-player">
+      <audio id="audio-player" controls></audio>
+      <div class="controls">
+        <button id="prev-btn">⏪</button>
+        <button id="play-pause-btn" class="play-btn">▶️</button>
+        <button id="next-btn">⏩</button>
+      </div>
+      <input type="range" id="seek-bar" class="seek-bar" value="0">
+      <div class="time-info">
+        <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+      </div>
+      <div class="volume-container">
+        <input type="range" id="volume" class="volume-control" min="0" max="1" step="0.01">
+      </div>
+      <div class="track-info">
+        <span id="track-title">Track Title</span> - <span id="track-artist">Track Artist</span>
+      </div>
+      <div class="playlist">
+        <ul id="playlist"></ul>
+      </div>
+      <div class="additional-controls">
+        <button id="shuffle-btn">🔀</button>
+        <button id="repeat-btn">🔁</button>
+        <button id="theme-toggle">🌙</button>
+      </div>
+      <div class="lyrics-container">
+        <div id="lyrics"++>No lyrics available</div>
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search track...">
+      </div>
+      <div class="share-download">
+        <button id="download-btn">⬇️ Download</button>
+        <button id="share-btn">🔗 Share</button>
+      </div>
+    </div>
+    <canvas id="visualizer" width="320" height="150"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

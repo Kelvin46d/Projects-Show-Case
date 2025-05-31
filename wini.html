@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .meme-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px auto;
+        }
+        .meme-image {
+            width: 80%;
+            border: 5px solid maroon;
+            border-radius: 10px;
+        }
+        .meme-text {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            width: 90%;
+        }
+        .top-caption {
+            top: 10px;
+        }
+        .bottom-caption {
+            bottom: 20px;
+        }
+        .secondary-caption {
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="meme-container">
+        <img src="../img/bus3.png" alt="Meme" class="meme-image">
+        <div class="meme-text top-caption">THAT SPECIAL MOMENT</div>
+        <div class="meme-text bottom-caption">When you find the perfect avocado at the supermarket</div>
+    </div>
+    <p class="secondary-caption">And then you check the price... 😭</p>
+</body>
+</html>
